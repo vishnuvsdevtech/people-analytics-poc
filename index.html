@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Assessment — what workforce analytics actually sees</title>
+<meta name="description" content="A simulation of the people-analytics stack an Indian IT services company runs: attendance punches, timesheet quality, utilisation, calibration grids and an attrition model. 48 fictional employees.">
+<meta name="theme-color" content="#080a0d">
+<meta property="og:title" content="The Assessment — what workforce analytics actually sees">
+<meta property="og:description" content="48 fictional employees, every signal a real HRMS holds. Move the weights and watch who gets cut.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://vishnuvsdevtech.github.io/people-analytics-poc/">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><i></i><span>THE ASSESSMENT</span></div>
+  <div class="tag mono">synthetic workforce · 48 fictional employees</div>
+</header>
+
+<div class="banner mono">
+  Every person here is generated. No real employee, company or client is represented — the field list is modelled on what an Indian IT services HRMS actually holds.
+</div>
+
+<nav class="tabs" id="tabs">
+  <button class="tab on" data-view="overview">Overview</button>
+  <button class="tab" data-view="attendance">Attendance</button>
+  <button class="tab" data-view="logs">Worklogs</button>
+  <button class="tab" data-view="work">Utilisation</button>
+  <button class="tab" data-view="calibration">Calibration</button>
+  <button class="tab" data-view="risk">Risk register</button>
+</nav>
+
+<main id="view"></main>
+
+<aside id="drawer" class="drawer" aria-hidden="true">
+  <button id="close" class="close mono">close ✕</button>
+  <div id="drawerBody"></div>
+</aside>
+
+<footer class="foot mono">
+  <span>The Assessment · POC</span>
+  <span>attendance · worklogs · utilisation · calibration · attrition</span>
+</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
